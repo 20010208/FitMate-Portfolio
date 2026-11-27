@@ -1,0 +1,44 @@
+{
+  "name": "fitmate-web",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc -p tsconfig.typecheck.json",
+    "test": "node --test \"**/*.test.{js,mjs,cjs,ts,mts,cts}\"",
+    "test:ai": "vitest run --config vitest.ai-security.config.ts"
+  },
+  "dependencies": {
+    "@next/third-parties": "^16.2.6",
+    "@supabase/ssr": "^0.10.0",
+    "@supabase/supabase-js": "^2.101.1",
+    "lucide-react": "^1.7.0",
+    "next": "16.2.2",
+    "openai": "^6.36.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1",
+    "sanitize-html": "^2.17.6",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.2",
+    "puppeteer": "^25.1.0",
+    "supabase": "2.109.1",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "4.1.10",
+    "xlsx": "^0.18.5"
+  }
+}
